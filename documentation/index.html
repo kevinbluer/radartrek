@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <title>SUMMIT - WebDesignCrowd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="WebDesignCrowd">
+
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/js/google-code-prettify/prettify.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- Montserrat: http://www.google.com/fonts/#QuickUsePlace:quickUse/Family:Montserrat -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:700,400' rel='stylesheet' type='text/css'>
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    </head>
+    
+<body data-spy="scroll" id="top">
+
+<!-- Documentation Navbar -->
+
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner">
+	  <div class="container">	   
+      <a class="btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></a> 
+	    <a class="brand" href="http://webdesigncrowd.com"><img src="assets/img/logo.png"></a>
+     	<div class="nav-collapse">
+        <ul class="nav">
+          <li><a href="#top" class="active">Top</a></li>
+          <li><a href="#html">HTML Structure</a></li>
+          <li><a href="#element">Elements</a></li>
+          <li><a href="#style">CSS Stylesheets</a></li>
+          <li><a href="#javascript">JavaScript</a></li>
+          <li><a href="#credits">Credits</a></li>
+          <li><a href="mailto:webdesigncrowd@gmail.com" >Contact us</a></li>
+        </ul>
+  	  </div>
+	  </div>
+	</div>
+</div> <!-- End of Navbar -->
+
+<!-- Main Container Beginning -->			
+			
+<div class="container">
+    
+	<div class="masthead">
+	    <h1>Summit - One Page Responsive Theme</h1>
+	</div> <!-- masthead -->
+	
+   <div id="intro">
+    <p class="highlight hero-unit">Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a>. Feel free to checkout my other products on <a href="https://wrapbootstrap.com/user/webdesigncrowd">WrapBootstrap</a>.<br /><br /> Thank you for purchasing my theme. If you have any questions that are beyond the scope of this help file, please feel free to email me at <a href="mailto:webdesigncrowd@gmail.com">WebDesignCrowd@gmail.com</a>, Thanks so much!</p>
+  </div> <!-- intro -->
+      
+<section id="html">
+	<div class="page-header">
+	  <h1>HTML Structure <small>General layout and content structure</small></h1>
+	</div>
+    <p>Studio is a multi purpose theme that is great for anything from creative portfolios to corporate websites. There are 5 main sections I want to summarize here. There is the navigation, the services section, the features section, the portfolio section, and the meet the team section.</p>
+
+    <hr />
+
+    <div class="row">
+      <div class="span3">
+        <h3>Navigation</h3>
+        <p>The navigation is a sidebar navigation made up of a Logo and Menu items. The menu items can be set up for smooth scroll or dropdown lists.<br /><br />To make dropdown menus add the class <code>dropdown</code> to the list item and add a dropdown menu ul tag.</p>
+      </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div id="navbar" class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand scroll" href="#home"><i class="fa fa-compass"></i><span>SUMMIT</span></a>
+    </div>
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">COLORS<i class="fa fa-caret-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.html">Blue</a></li>
+            <li><a href="index-green.html">Green</a></li>
+          </ul>
+        </li>
+        <li><a class="scroll hidden" href="#home"></a></li>
+        <li><a class="scroll" href="#services">SERVICES</a></li>
+        <li><a class="scroll" href="#portfolio">PORTFOLIO</a></li>
+        <li><a class="scroll" href="#team">TEAM</a></li>
+        <li><a class="scroll" href="#contact">CONTACT</a></li>
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div></xmp>
+</pre>
+      </div>
+        </div>
+    <hr />
+
+<div class="row">
+    <div class="span3">
+  <h3>Services</h3>
+  <p>The services section consists of a 4 icon wrappers that describe a different service. </p>
+  <p>You can change the title of each service in the <code>h2.title</code> tag, and also change the description text in the <code>p.description</code> tag.</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div id="services" class="section">
+  <div class="container">
+
+    <div class="content">
+      <div class="text-center">
+        <h2 class="title"><span class="icon-gear"></span>Services</h2>            
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <p class="description">We offer services that range from <span class="highlight">website design</span> to <span class="highlight">branding</span>. Just check out all of our services below to get a general idea of what we are capable of. We have three people on our team and we will try to accommodate your request. Send us an <a href="#">email</a> to share your ideas!
+            </p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="icon-wrapper">
+              <span class="circle"><i class="fa fa-expand"></i></span>
+            </div>
+            <h3>Responsive.</h3>
+            <p>Studio is responsive meaning it looks great on all devices. </p>                
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="icon-wrapper">
+              <span class="circle"><i class="fa fa-rocket"></i></span>
+            </div>
+            <h3>Lightweight.</h3>
+            <p>Studio is speedy and quick to load so users don't get bored. </p>                
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="icon-wrapper">
+              <span class="circle"><i class="fa fa-gear"></i></span>
+            </div>
+            <h3>Customizable.</h3>
+            <p>Studio has well defined sections so you can mix and match. </p>                
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-xs-12">
+          <div class="service">
+            <div class="icon-wrapper">
+              <span class="circle"><i class="fa fa-eye"></i></span>
+            </div>
+            <h3>Retina Ready.</h3>
+            <p>Studio has beautiful crystal clear graphics on all devices. </p>                
+          </div>
+        </div>
+      </div>
+
+
+    </div><!-- /.content -->
+  </div>
+</div></xmp>
+</pre>
+      </div>
+        </div>
+        
+<hr />
+<div class="row">
+    <div class="span3">
+  <h3>Features</h3>
+  <p>The features Includes a title a description and an image that slides and fades in. It can go left or right.</p>
+  <p>The title is in the <code>h3</code> tag and the feature description is in the <code>p</code> tag</p>
+  <p>You can change the button by changing the anchor tag with class <code>btn</code></p>
+  <p>To change the image change the src in the <code>img.preview</code> tag</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div id="features" class="section">
+  <div class="container">
+    
+    <div class="content">
+      <div class="row single vcontainer">
+        <div class="col-md-6 col-sm-6 col-xs-12 valign">
+          <div class="wrapper">
+            <h3>Customizable.</h3>
+            <p>Each section is clearly defined in Summit meaning you can easily mix and match to create your perfect website. Because Summit is a one page theme, all you have to do is rearrange the sections in one page.</p>
+            <a class="btn color" href="#">MORE DETAILS</a>
+          </div>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 valign">
+          <img class="preview slide-in right" src="img/preview4.jpg">
+        </div>
+      </div>
+      
+    </div><!-- /.content -->
+  </div>
+  <div class="container">
+    
+    <div class="content">
+      <div class="row single">
+        <div class="col-md-6 col-sm-6 col-xs-12 valign pull-right">
+          <h3>Responsive.</h3>
+          <p>What does responsive mean? It means that Studio will adapt and conform to any device size and will still look great. Studio is great for those looking to capture a large mobile audience.</p>
+          <a class="btn color" href="#">MORE DETAILS</a>
+        </div>
+        <div class="col-md-6 col-sm-6 col-xs-12 valign pull-right">
+          <img class="preview slide-in left" src="img/preview5.jpg">
+        </div>
+      </div>
+      
+    </div><!-- /.content -->
+  </div>
+</div></xmp>
+</pre>
+      </div>
+        </div>
+        <hr />
+<div class="row">
+    <div class="span3">
+  <h3>Portfolio</h3>
+  <p>The portfolio uses the masonry library. It fades in as you scroll down.</p>
+  <p>Each item has an image that can be linked to a link or a modal. It also has a description div which has a title and a <code>p</code> description.</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div id="portfolio" class="section">
+  <div class="container">  
+    <div class="content">
+      <div class="text-center">
+        <h2 class="title"><span class="icon-suitcase"></span>Portfolio</h2>            
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <p class="description">We have created a number of products that range from full scale <span class="highlight">web apps</span> to simple <span class="highlight">website designs</span>. Check out all our previous work to get an idea of what we can do!
+            </p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+      </div>
+
+    </div><!-- /.content -->  
+    <div id="grid" class="row masonry-grid effect-2">
+      <li class="col-md-4 col-sm-4 col-xs-12 item">
+        <a data-toggle="modal" href="#modal1" class="image">
+          <img src="img/sintel-bedroom.png" alt="sintel bedroom"> 
+          <span class="overlay"><span class="valign"></span><i class="fa fa-search"></i></span>              
+        </a>
+        <div class="description">
+          <h2>Sintel Bedroom</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+          <div class="clearfix"></div>
+        </div>          
+      </li>
+    </div>  
+  </div>
+  
+</div></xmp>
+</pre>
+      </div>
+        </div>
+        <hr />
+<div class="row">
+    <div class="span3">
+  <h3>Meet the Team</h3>
+  <p>This section consists of 3 team member previews. They have an image of the team member and their name and title.</p>
+  <p>Each item has an image that can be linked to a link or a modal. It also has a description div which has a title and a <code>p</code> description.</p>
+</div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div id="team" class="section">
+  <div class="container">
+    <div class="content">
+      <div class="text-center">
+        <h2 class="title"><span class="icon-suitcase"></span>Meet the Team</h2>            
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+        <div class="col-md-8 col-sm-8 col-xs-12">
+          <p class="description">We have created a number of products that range from full scale <span class="highlight">web apps</span> to simple <span class="highlight">website designs</span>. Check out all our previous work to get an idea of what we can do!
+            </p>
+        </div>
+        <div class="col-md-2 col-sm-2 col-xs-12"></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 col-sm-4 col-xs-12">
+          <div class="wrapper">
+            <a href="#" class="portrait-wrapper">                  
+              <img class="portrait" src="img/portrait1.jpg">
+              <span class="overlay"><span class="valign"></span><i class="fa fa-envelope"></i></span>              
+            </a>
+            <div class="text-center">
+              <h3>Katie Smith</h3>
+              <p>Founder</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div><!-- /.content -->
+  </div>
+</div></xmp>
+</pre>
+      </div>
+        </div>
+
+  </section> <!-- Markup -->
+
+  <section id="element">
+  	<div class="page-header">
+  	  <h1>Elements <small>HTML Elements</small></h1>
+  	</div>
+      <p>Bolt supports many cool customized bootstrap elements. I will go over elements including the Bootstrap Column system, forms, Collapsible toggle menus, alert boxes, buttons and Modal image previews.</p>
+
+          <hr />
+<div class="row">
+  <div class="span3">
+    <h3>Highlight</h3>
+    <p>This consists of an icon and a brief tagline.</p>
+    <p>To change the icon change the <code>i</code> tag or <code>span</code> tag depending on the icon font you are using</p>
+  </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><span class="highlight">website designs</span></xmp>
+</pre>
+
+  </div>
+</div>
+
+<hr />
+<div class="row">
+  <div class="span3">
+    <h3>Icon Description</h3>
+    <p>This consists of an icon and a brief tagline.</p>
+    <p>To change the icon change the <code>i</code> tag or <code>span</code> tag depending on the icon font you are using</p>
+  </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><p class="icon-description">
+  <span class="icon-wrapper">
+    <span class="circle"><i class="icon-map-marker"></i></span>
+  </span>
+  123 Broadway, Manhattan, NY 10282
+</p></xmp>
+</pre>
+
+  </div>
+</div>
+
+<hr />
+
+<div class="row">
+  <div class="span3">
+    <h3>Bootstrap Columns</h3>
+    <p>Bootstrap columns are the easiest way to make things responsive. just define a row div, and you can add columns to them. with tags like col-sm-4, that means you can fit 3 of those into a column on a small device. There are 12 columns in a row. Usually you want to define col-xs-12 as 12 columns because on small screens things will shrink.</p>
+  </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div class="row">
+  <div class="col-md-4 col-sm-4 col-xs-12">
+</div></xmp>
+</pre>
+
+  </div>
+</div>
+
+<hr />
+
+  <div class="row">
+      <div class="span3">
+    <h3>Forms</h3>
+    <p>These custom forms are made with an icon attachment. It also has simple HTML5 validations.</p>
+    <p>The icon and border will highlight on focus, and the border will stay highlighted if the HTML5 validation is correct.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint">  <form role="form">
+      <div class="form-group">
+        <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
+        <label for="exampleInputName"><i class="icon-tag"></i></label>
+        <div class="clearfix"></div>
+      </div>
+      <div class="form-group">
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+        <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
+        <div class="clearfix"></div>
+      </div>
+      <div class="form-group textarea">
+        <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+        <label for="exampleInputMessage"><i class="icon-pencil"></i></label>
+        <div class="clearfix"></div>
+      </div>
+      
+      <button type="submit" class="btn btn-large">Send Message</button>
+    </form>
+  </xmp>
+  </pre>
+        </div>
+          </div>
+<hr />
+<div class="row">
+  <div class="span3">
+    <h3>Carousel</h3>
+    <p>In the product style page, there is a carousel in the home section. The company style also has a carousel in the clients section.</p>   
+  </div>
+<div class="span9">
+<pre class="prettyprint linenums"><xmp class="prettyprint"><div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <ul class="row">
+        <li class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#" class="thumbnail">
+            <img src="img/generic-logo.png" alt="...">
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#" class="thumbnail">
+            <img src="img/generic-logo.png" alt="">
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#" class="thumbnail">
+            <img src="img/generic-logo.png" alt="">
+          </a>
+        </li>
+        <li class="col-md-3 col-sm-6 col-xs-12">
+          <a href="#" class="thumbnail">
+            <img src="img/generic-logo.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="item">
+      ...
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+    <i class="fa fa-angle-left"></i>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+    <i class="fa fa-angle-right"></i>
+  </a>
+</div>
+</xmp></pre>
+      </div>
+        </div>
+        <hr />
+  <div class="row">
+      <div class="span3">
+    <h3>Pricing Tables</h3>
+    <p>These tables show prices using HTML tables.</p>
+    <p>There is room for a title, price, and features of the product.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+<xmp class="prettyprint"><div class="col-md-4 col-sm-4 col-xs-12">
+  <div class="wrapper">
+    <h3 class="text-center">BASIC</h3>
+    <table class="table">
+      <thead>
+        <tr><th>9</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>One Time Installation</td></tr>
+        <tr><td>No reselling </td></tr>
+        <tr><td>Free Email Support</td></tr>  
+        <tr><td><a class="btn color" href="#">PURCHASE NOW</a></td></tr>  
+      </tbody>
+    </table>
+  </div>
+  </div></xmp>
+  </pre>
+        </div>
+          </div>
+  <hr />
+  <div class="row">
+      <div class="span3">
+    <h3>Buttons</h3>
+    <p>Buttons are pretty simple to use, just define an anchor with the class "btn". There is also a larger size if you add the class "btn-large" to the btn.</p>
+    <p>You can also add icons into the button.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint"><a href="#" class="btn">Button</a>
+<a href="#" class="btn"><i class="icon-heart"></i>Button</a>
+<a href="#" class="btn btn-large">Large Button</a>
+<a href="#" class="btn btn-large"><i class="icon-heart"></i>Large Button</a></xmp>
+  </pre>
+        </div>
+          </div>
+  <hr />
+  <div class="row">
+      <div class="span3">
+    <h3>Image Overlays</h3>
+    <p>By image overlays I mean in the gallery when you hover over an image it has an effect with a yellow screen and an icon.</p>
+    <p>You can also add icons into the button. This example here is of an overlay in effect in a MixItUp gallery.</p>
+  </div>
+
+  <div class="span9">
+  <pre class="prettyprint linenums">
+  <xmp class="prettyprint"><li class="col-md-4 col-sm-4 col-xs-12 mix print" data-cat="print">
+  <a href="#" class="mix-cover">
+    <img class="placeholder" src="http://placehold.it/340x300" alt="placeholder">
+    <div class="overlay"><span class="valign"></span><i class="icon-search"></i></div>
+  </a>
+</li></xmp>
+  </pre>
+        </div>
+          </div>
+
+    </section> <!-- Markup -->
+      
+
+<section id="style">
+    <div class="page-header">
+       <h1>Styles <small>Styles customization and highlights</small></h1>
+     </div>
+
+ <div class="alert alert-info"><a class="close" data-dismiss="alert">×</a> <b>Bootstrap Stylesheets:</b> Bootstrap comes with its own css stylesheet that you should never touch or change. It contains all the styles for the bootstrap framework. I have also included that minimized version and the normal version if you want to go through the bootstrap styles.</div>
+
+<div class="row">
+    <div class="span3">
+  <h3>Stylesheets</h3>
+  <p>Here's a list of the stylesheet files I'm using with this template, you can find more information opening each file:</p>
+</div>
+<div class="span9">
+        <table class="table table-bordered table-striped">
+              <thead>
+            <tr>
+                  <th>File Name</th>
+                  <th>Description</th>
+                </tr>
+          </thead>
+              <tbody>
+            <tr>
+                  <td><code>style.css</code></td>
+                  <td>Custom Styles for this template. You can edit this and personalize your theme.</td>
+                </tr>
+            <tr>
+                  <td><code>bootstrap.css</code></td>
+                  <td>Bootstrap stylesheet. It is best not to edit this file at all.</td>
+                </tr>
+          </tbody>
+            </table>
+      </div>
+        </div>
+    <hr />
+    <div class="row">
+        <div class="span3">
+      <h3>How To Edit CSS</h3>
+      <p>Here are some popular things you can edit easily with CSS. Obviously I can't list everything so if there is a specific css question feel free to email me.</p>
+    </div>
+
+    <div class="span9">
+    <pre class="prettyprint linenums">
+    #primaryContent a {
+        color: #someColor;
+        font-size: 40px;
+     	font-family: Arial, Helvetica, sans-serif;
+    }
+    #item {
+        background-color: #someColor;
+    }
+    </pre>
+          </div>
+            </div>
+    <hr />
+    <div class="row">
+	<div class="span3">
+	   <h3>CSS Structure</h3>
+	   <p>The style.css sheet contains all my styles. It's organized so you can easily find what styles correspond to what.</p>
+	</div>
+
+<div class="span9">	
+<pre class="prettyprint linenums">
+/*  NAVBAR
+ *    stylings for fixed navbar
+ */
+
+CSS code
+
+/*  SECTION
+ *    stylings for sections
+ */
+
+CSS code
+
+/*  SERVICES
+ *    stylings for services content
+ *    image background parallax
+ *    Supports grids of multiple sizes (half, thirds, quarters, etc.)
+ */
+
+CSS code
+
+/*  PORTFOLIO
+ *    stylings for portfolio
+ */
+
+CSS code
+
+/*  BLOG
+ *    masonry grid
+ */
+
+CSS code
+
+etc, etc.
+					</pre>
+      </div>
+        </div>
+  </section>
+      <!-- Styles -->
+      
+      <section id="javascript">
+	<div class="page-header">
+	  <h1>JavaScript <small>JavaScript customization and highlights</small></h1>
+	</div>
+	<div class="alert alert-info"><a class="close" data-dismiss="alert">×</a> <b>Bootstrap Javascript:</b> Bootstrap comes with its own javascript file that you should never touch or change. It contains all the scripts for the bootstrap framework. I have also included that minimized version.</div>
+	<div class="row">
+	  <div class="span3">
+	    <h3>JavaScript Files</h3>
+	    <p>Only edit init.js, the rest of the files are plugins or libraries that shouldn't be edited</p>
+	  </div>
+	  <div class="span9">
+	    <table class="table table-bordered table-striped">
+	      <thead>
+	        <tr>
+	          <th>Tag</th>
+	          <th>Description</th>
+	        </tr>
+	      </thead>
+	      <tbody>
+	        <tr>
+	          <td><code>init.js</code></td>
+	          <td>This is the custom javascript that initializes everything like the carousels, web elements and more.</td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery-1.9.1.min.js</code></td>
+	          <td>jQuery is a Javascript library that greatly reduces the amount of code that you must write.</td>
+	        </tr>
+	        <tr>
+	          <td><code>bootstrap.js</code></td>
+	          <td>This is the Bootstrap framework javascript that enables all of its functionalities. Do not edit this.</td>
+	        </tr>
+	        <tr>
+	          <td><code>jquery.mixitup.js</code></td>
+	          <td>This is jQuery plugin that enables the portfolio sorting and categorization.</td>
+	        </tr>
+	        <tr>
+	          <td><code>masonry.pkgd.min.js</code></td>
+	          <td>This is jQuery plugin that enables the portfolio sorting and categorization.</td>
+	        </tr>
+	        <tr>
+	          <td><code>masonry-init.js</code></td>
+	          <td>This initializes the code for masonry. This is separate from the main init file because not all pages need masonry.</td>
+	        </tr>
+	        <tr>
+	          <td><code>respond.min.js</code></td>
+	          <td>This enables css media queries in internet explorer browsers 8 and below. It is simply for cross browser compatibility.</td>
+	        </tr>
+	      </tbody>
+	    </table>
+	  </div>
+	</div>
+  <hr />
+
+<div class="row">
+	<div class="span3">
+	  <h3>Masonry Blog</h3>
+	  <p>Masonry is a plugin that allows things in a row to fit nicely together without unnecessary whitespace.</p>   
+	  <p>Here is the initializing code. If you wanna customize any masonry options it would go inside the <code>$container.masonry({</code> block.</p>
+	</div>
+<div class="span9">
+<pre class="prettyprint js linenums:103">
+  var $container = $('.masonry-grid');
+  
+  $container.imagesLoaded(function(){
+    new AnimOnScroll( document.getElementById( 'grid' ), {
+      minDuration : 0.4,
+      maxDuration : 0.7,
+      viewportFactor : 0.2
+    } );
+  });
+</pre>
+      </div>
+        </div>
+<hr>
+
+<div class="row">
+  <div class="span3">
+    <h3>Google Maps</h3>
+    <p>Take a look at the <a href="https://developers.google.com/maps/documentation/javascript/tutorial">maps api </a>for better documentation.</p>
+  </div>
+
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div id="map-canvas"></div>
+<script type="text/javascript">
+function initialize() {
+  var myLatLong = new google.maps.LatLng(40.7556,-73.9797);
+  var mapOptions = {
+    center: myLatLong,
+    zoom: 13
+  };
+  var map = new google.maps.Map(document.getElementById("map-canvas"),
+      mapOptions);
+  // To add the marker to the map, use the 'map' property
+  var marker = new google.maps.Marker({
+      position: myLatLong,
+      map: map,
+      title:"123 Broadway"
+  });
+
+}
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</xmp>
+</pre>
+
+  </div>
+</div>
+<hr />
+<div class="row">
+  <div class="span3">
+    <h3>Parallax</h3>
+    <p>The background image in the home has a parallax effect.</p>   
+    <p>All you have to do add an image inside a <code>bg</code> div.</p>
+  </div>
+<div class="span9">
+<pre class="prettyprint linenums">
+<xmp class="prettyprint"><div class="bg parallax"><img src="img/mountains.png"></div></xmp>
+</pre>
+      </div>
+        </div>
+<hr />
+  </section><!-- JavaScript -->
+      
+      
+
+	<section id="credits">
+	  <div class="page-header">
+	    <h1>Credits Files <small>Some of your credits and sources</small></h1>
+	  </div>
+	  <p>I've used the following images, scripts or other files as listed.</p>
+	  <h3>Framework</h3>
+	  <ol>
+	    <li><a href="http://getbootstrap.com/2.3.2/">Bootstrap</a> <small>&mdash; Version 3.0.0 </small></li>
+	  </ol>
+	  <h3>JavaScript</h3>
+	  <ol>
+	    <li><a href="http://jquery.com/">jQuery</a> <small>&mdash; Popular Javascript library </small></li>
+	    <li><a href="http://masonry.desandro.com/">Masonry</a> <small>&mdash; A Cascading grid layout library </small></li>
+	    <li><a href="http://desandro.github.io/imagesloaded/">ImagesLoaded</a> <small>&mdash; A plugin that fires when all images are loaded </small></li>
+	    <li><a href="https://github.com/scottjehl/Respond">Respond</a> <small>&mdash; Enables CSS Media Queries in IE 8 and below </small></li>
+	  </ol>
+	  <h3>Images</h3>
+	  <ol>
+	    <li><a href="http://sintel.org">Sintel</a> <small>&mdash; Gallery Images from Open Blender Movie, Sintel</small></li>
+	    <li><a href="http://freerangestock.com">Portrait Images</a> <small>&mdash; Images from FreeRangeStock</small></li>
+	    <li><a href="http://www.pixeden.com/psd-web-elements/vector-apple-outline-device-psd">Mac Devices Outline</a> <small>&mdash; Mac Device Outlines used in some preview images</small></li>
+      <li><a href="http://www.flickr.com/">Background Images</a>&mdash; Images used and modified in the background images</li>
+	  </ol>
+	</section><!-- Credits -->
+      
+
+
+      <hr />
+
+<div class="goodbye">
+    <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. Email me at <a href="mailto:webdesigncrowd@gmail.com" >Webdesigncrowd@gmail.com</a> Or message me on <a href="https://wrapbootstrap.com/user/webdesigncrowd">WrapBootstrap</a></p>
+  </div>
+
+      <hr />
+
+<footer>
+    <p>&copy; Made by <a href="http://webdesigncrowd.com">WebDesignCrowd</a></p>
+</footer>
+
+</div><!-- /container --> 
+
+<!-- Le javascript
+    ================================================== --> 
+<!-- Placed at the end of the document so the pages load faster --> 
+<script src="assets/js/jquery.js"></script> 
+<script src="assets/js/scripts.js"></script> 
+<script src="assets/js/google-code-prettify/prettify.js"></script> 
+<script src="assets/js/bootstrap-transition.js"></script> 
+<script src="assets/js/bootstrap-alert.js"></script> 
+<script src="assets/js/bootstrap-modal.js"></script> 
+<script src="assets/js/bootstrap-dropdown.js"></script> 
+<script src="assets/js/bootstrap-scrollspy.js"></script> 
+<script src="assets/js/bootstrap-tab.js"></script> 
+<script src="assets/js/bootstrap-tooltip.js"></script> 
+<script src="assets/js/bootstrap-popover.js"></script> 
+<script src="assets/js/bootstrap-button.js"></script> 
+<script src="assets/js/bootstrap-collapse.js"></script>
+</body>
+</html>

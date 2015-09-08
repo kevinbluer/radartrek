@@ -1,0 +1,105 @@
+/*!
+ * WebDesignCrowd.com
+ *
+ */
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+}
+a:hover {
+  text-decoration: none;
+}
+p {
+  margin: 9px 0;
+}
+p.hero-unit {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 5px 0px rgba(0,0,0, 0.1) inset;
+}
+.btn {
+  background-color: #3992ea;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color: #fff;
+  padding: 10px 20px;
+  border: 0;
+}
+h1 small {
+  margin-left: 10px;
+}
+xmp.prettyprint {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+/* Navbar */
+
+.navbar {
+  height: 50px;
+}
+  .navbar-inner {
+    background: none;
+    background-color: #7db9e8;
+    border-bottom: 1px solid #328dd3;
+    box-shadow: inset 0 -1px 3px 0 rgba(0,0,0,.1);
+  }
+    .navbar .nav li {
+    }
+      .navbar .nav li a {
+        color: #fff;
+        height: 50px;
+        font-size: 13px;
+        line-height: 49px;
+        padding: 0 13px;
+        transition: background-color .2s;
+        -webkit-transition: background-color .2s;
+        text-shadow: rgba(0,0,0,.3) 1px 1px 0;
+      }
+      .navbar .nav li.active a{ background-color: #4ea6e5; }
+      .navbar .nav li:hover a,
+      .navbar .nav li.active:hover a { background-color: #328dd3; }
+  .navbar a.brand {
+    padding: 0;
+    height: 50px;
+    transition: .3s;
+    -webkit-transition: .3s;
+  }
+    .navbar a.brand img {
+      margin-top: -1px;
+    }
+    .navbar a.brand:hover {
+      opacity: .7;
+    }
+  .navbar .btn-navbar {
+    border: 0;
+    cursor: pointer;
+    padding: 17px;
+  }
+  .navbar.navbar-fixed-top {
+    position: fixed;
+  }
+  @media (max-width: 979px) {
+    body {
+      margin-top: 60px;
+    }
+    body .navbar .nav li a {
+      line-height: 30px;
+      height: 30px;
+      color: #fff;
+    }
+    .navbar .btn-navbar {
+      background: none;
+      background-color: transparent;
+    }
+  }
+  /* odd redraw bugfix */
+  .navbar-fixed-top{
+    -webkit-transform: scale3d(1,1,1);
+  }

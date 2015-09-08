@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Radar Treks">
+    <meta name="author" content="Kevin Bluer">
+
+    <title>RADAR TREK</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    
+
+    <!-- Montserrat Sans -->
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400, 700' rel='stylesheet' type='text/css'>        
+    <!-- Lato Font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body class="blue">
+   
+    <div id="navbar" class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand scroll" href="#home"><i class="fa fa-compass"></i><span>RADAR TREK</span></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a class="scroll hidden" href="#home"></a></li>
+            <li><a class="scroll" href="#treks">OUR TREKS</a></li>
+            <li><a class="scroll" href="#customers">CUSTOMERS</a></li>
+            <li><a class="scroll" href="#photos">PHOTOS</a></li>
+            <li><a class="scroll" href="#team">THE TEAM</a></li>
+            <li><a class="scroll" href="#contact">CONTACT</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>    
+    <!-- All Page Modals -->      
+    <div class="modals">
+      <div class="modal fade" id="contact-form" tabindex="-1" role="dialog">
+        <div class="wrapper">
+
+          <div class="container text-center">
+            <a class="close" data-dismiss="modal" href=""><i class="icon-remove"></i></a>            
+            <h1 class="text-center">Contact Us</h1>
+
+            <form role="form">
+              <div class="form-group">
+                <label for="exampleInputName"><i class="icon-tag"></i></label>
+                <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
+                <div class="clearfix"></div>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
+                <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+                <div class="clearfix"></div>
+              </div>
+              <div class="form-group textarea">
+                <label for="exampleInputMessage"><i class="icon-pencil"></i></label>
+                <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+                <div class="clearfix"></div>
+              </div>
+
+              <button type="submit" class="btn">SEND MESSAGE</button>
+            </form>
+          </div>
+
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->      
+      <div class="modal fade" id="modal1" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-bedroom.png" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Bedroom</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+      <div class="modal fade" id="modal2" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-snowscape.jpg" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Snowscape</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+      <div class="modal fade" id="modal3" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-wallpaper-ishtar.jpg" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Wallpaper Ishtar</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+      <div class="modal fade" id="modal4" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-bamboo-2.jpg" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Bamboo</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+      <div class="modal fade" id="modal5" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/ishtar-alley.png" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Ishtar Alley</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+      <div class="modal fade" id="modal6" tabindex="-1" role="dialog">
+        <div class="wrapper">
+          <img data-dismiss="modal" class="img-responsive" src="img/sintel-town-concept.jpg" alt="">
+          <h2 class="modal-title"><a href="http://sintel.org">Sintel Town Concept</a></h2>
+        </div><!-- /.content -->      
+      </div><!-- /.modal -->
+    </div><!-- /.modals -->
+    
+    
+    <!-- Home Section -->
+    <div id="home" class="section">   
+      <div class="parallax"><img src="img/mountains.png"></div>
+      <div class="row">
+        <div class="col-md-1 col-sm-1 col-xs-12 empty"></div>
+        <div class="col-md-10 col-sm-10 col-xs-12 full">
+          <div class="logo"><i class="fa fa-compass"></i></div>
+          <h1 class="welcome">
+            Welcome to Radar Trek<br />
+            <span>Discover the wonders of Nepal.</span>
+          </h1> 
+          <div class="call-to-action">
+            <a class="btn scroll" href="#treks"><i class="fa fa-angle-down"></i>DISCOVER MORE</a>
+          </div>   
+        </div>
+        <div class="col-md-1 col-sm-1 col-xs-12 empty"></div>
+      </div>     
+    </div><!-- /.container -->
+    <div id="treks" class="section gray">
+      <div class="container">
+
+        <div class="content">
+          <div class="text-center">
+            <h2 class="title">Our Treks</h2>            
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <p class="description">Everest Base camp Trekking has become the last destination of trekker’s life because of its adventure journey, awesome landscape, breathtaking scenery, incredible Buddhist monastery, Sherpa Settlements, and glimpse of the world’s highest peak Mt. Everest (8848m).  Mount Everest has fascinated by Sir Edmund Hillary and Tenzing Norgay Sherpa in 1953 put the footsteps of human being on summit; having titanic sacrifice. The voyage to Everest Base camp is once in a life time adventure challenging and achievement; standing in the shadow of highest peak on Earth.
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="service">
+                <div class="icon-wrapper">
+                  <span class="circle"><i class="fa fa-rocket"></i></span>
+                </div>
+                <h3>Organized.</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>                
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="service">
+                <div class="icon-wrapper">
+                  <span class="circle"><i class="fa fa-gear"></i></span>
+                </div>
+                <h3>Equipped.</h3>
+                <p>Facere, tempore velit sint minima corrupti odio aliquam accusantium aperiam eveniet iste.</p>                
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="service">
+                <div class="icon-wrapper">
+                  <span class="circle"><i class="fa fa-eye"></i></span>
+                </div>
+                <h3>Safe.</h3>
+                <p>Placeat officiis ipsa tempora dolore quidem laborum.</p>                
+              </div>
+            </div>
+          </div>
+
+
+        </div><!-- /.content -->
+      </div>
+    </div>
+    <div id="customers" class="section dark">
+      <div class="parallax"><img src="img/night-mountains.png"></div>
+      <div class="container">
+        <div class="content">
+          <div class="text-center">
+            <h2 class="title">Customers</h2>            
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <p class="description">Check out some of our previous trekkers.
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+          </div>
+        </div>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="item active">
+              <ul class="row">
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#" class="thumbnail">
+                    <img src="img/kevin.jpg" alt="Kevin Bluer">
+                  </a>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#" class="thumbnail">
+                    <img src="http://placehold.it/100x30" alt="">
+                  </a>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#" class="thumbnail">
+                    <img src="http://placehold.it/100x30" alt="">
+                  </a>
+                </li>
+                <li class="col-md-3 col-sm-6 col-xs-12">
+                  <a href="#" class="thumbnail">
+                    <img src="http://placehold.it/100x30" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="photos" class="section gray">
+      <div class="container">  
+        <div class="content">
+          <div class="text-center">
+            <h2 class="title">Photos</h2>            
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <p class="description">Check out the photos from previous treks.
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+          </div>
+
+        </div><!-- /.content -->  
+        <div id="grid" class="row masonry-grid effect-2">
+          <li class="col-md-4 col-sm-4 col-xs-12 item">
+            <a data-toggle="modal" href="#modal1" class="image">
+              <img src="img/sintel-bedroom.png" alt="sintel bedroom"> 
+              <span class="overlay"><span class="valign"></span><i class="fa fa-search"></i></span>              
+            </a>
+            <div class="description">
+              <h2>Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="clearfix"></div>
+            </div>          
+          </li>
+          <li class="col-md-4 col-sm-4 col-xs-12 item">
+            <a data-toggle="modal" href="#modal4" class="image">
+              <img src="img/sintel-bamboo-2.jpg" alt="ishtar alley"> 
+              <span class="overlay"><span class="valign"></span><i class="fa fa-search"></i></span>              
+            </a>     
+            <div class="description">
+              <h2>Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="clearfix"></div>
+            </div>         
+          </li>
+          <li class="col-md-4 col-sm-4 col-xs-12 item">
+            <a data-toggle="modal" href="#modal2" class="image">
+              <img src="img/sintel-snowscape.jpg" alt="sintel snowscape"> 
+              <span class="overlay"><span class="valign"></span><i class="fa fa-search"></i></span>              
+            </a>
+            <div class="description">
+              <h2>Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="clearfix"></div>
+            </div>          
+          </li>
+          <li class="col-md-4 col-sm-4 col-xs-12 item">
+            <a data-toggle="modal" href="#modal3" class="image">
+              <img src="img/sintel-wallpaper-ishtar.jpg" alt="sintel wallpaper ishtar"> 
+              <span class="overlay"><span class="valign"></span><i class="fa fa-search"></i></span>              
+            </a>
+            <div class="description">
+              <h2>Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="clearfix"></div>
+            </div>          
+          </li>     
+          <li class="col-md-4 col-sm-4 col-xs-12 item">
+            <a data-toggle="modal" href="#modal6" class="image">
+              <img src="img/sintel-town-concept.jpg" alt="sintel town concept"> 
+              <span class="overlay"><span class="valign"></span><i class="fa fa-search"></i></span>              
+            </a>  
+            <div class="description">
+              <h2>Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="clearfix"></div>
+            </div>          
+          </li>          
+          <li class="col-md-4 col-sm-4 col-xs-12 item">
+            <a data-toggle="modal" href="#modal5" class="image">
+              <img src="img/ishtar-alley.png" alt="ishtar alley"> 
+              <span class="overlay"><span class="valign"></span><i class="fa fa-search"></i></span>              
+            </a>   
+            <div class="description">
+              <h2>Lorem Ipsum</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              <div class="clearfix"></div>
+            </div>         
+          </li>
+        </div>  
+      </div>
+      
+    </div><!-- /.container -->  
+
+
+
+    <!-- Meet the Team Section -->
+    <div id="team" class="section dark">
+      <div class="parallax"><img src="img/night-mountains.png"></div>
+      <div class="container">
+        <div class="content">
+          <div class="text-center">
+            <h2 class="title">The Team</h2>            
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <p class="description">We have an incredibly experienced team that will be with you every step of the way.
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="wrapper">
+                <a href="#" class="portrait-wrapper">                  
+                  <img class="portrait" src="img/narayan.jpg">
+                  <span class="overlay"><span class="valign"></span><i class="fa fa-envelope"></i></span>              
+                </a>
+                <div class="text-center">
+                  <h3>Narayan Khanal</h3>
+                  <p>Team Leader</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div><!-- /.content -->
+      </div>
+    </div>
+
+
+
+    
+    <div id="contact" class="section footer-padding">
+      <div class="container no-bottom">
+        <div class="content">
+          <div class="text-center">
+            <h2 class="title">Contact</h2>            
+          </div>
+          <div class="row">
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+              <p class="description">Our office is right in the heart of Kathmandu. Feel free to get in touch or stop by
+                </p>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-12"></div>
+          </div>
+        </div>
+      </div>
+      <div id="map-canvas"></div>
+      <div class="container no-pad">
+        <div class="content">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <p class="icon-description">
+                <span class="icon-wrapper">
+                  <span class="circle"><i class="fa fa-map-marker"></i></span>
+                </span>
+                Kathmandu, Nepal
+              </p>
+              <p class="icon-description">
+                <span class="icon-wrapper">
+                  <span class="circle"><i class="fa fa-phone"></i></span>
+                </span>
+                (123) 123-1234
+              </p>
+              <p class="icon-description">
+                <span class="icon-wrapper">
+                  <span class="circle"><i class="fa fa-envelope"></i></span>
+                </span>
+                khanalnara@hotmail.com
+              </p>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-12">
+              <p class="description">
+              Contact us through our form below. We always reply as soon as possible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2>Contact Form</h2>
+
+        <div class="content">
+          <form role="form">
+            <div class="form-group">
+              <label for="exampleInputName"><i class="icon-tag"></i></label>
+              <input type="text" class="form-control" id="exampleInputName" placeholder="Full Name" required>
+              <div class="clearfix"></div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1"><i class="icon-inbox"></i></label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required>
+              <div class="clearfix"></div>
+            </div>
+            <div class="form-group textarea">
+              <label for="exampleInputMessage"><i class="icon-pencil"></i></label>
+              <textarea rows="6" class="form-control" id="exampleInputMessage" placeholder="Write Message" required></textarea>
+              <div class="clearfix"></div>
+            </div>
+
+            <button type="submit" class="btn color">SEND MESSAGE</button>
+          </form>         
+        </div>
+      </div>
+    </div><!-- /.container -->
+
+    <div id="footer" class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <p>&copy; 2015, Radar Treks</a></p>   
+          </div>
+          <div class="col-md-6 col-sm-6 col-xs-12">
+            <div class="">
+            <p class="social-media">
+              <a href="#" data-toggle="tooltip" title="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="#" data-toggle="tooltip" title="facebook"><i class="fa fa-facebook"></i></a>
+            </p>
+         </div>
+        </div>
+      </div>  
+    </div>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+    <script src="js/classie.js"></script>
+    <script src="js/AnimOnScroll.js"></script>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAe64UN6rxbgDo8hzspyTofIGXBiNcE_U&sensor=false">
+    </script>
+    <script src="js/init.js"></script>
+
+  </body>
+</html>
