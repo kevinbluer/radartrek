@@ -1,0 +1,15 @@
+.navbar {
+	top: 0px;
+	bottom: inherit;
+}
+
+#about .container { padding-top: 150px; }
+
+.text-center:not(:first-child) {
+    margin-top: 30px;
+}
+
+ul li {
+	padding: 6px 0;
+	text-align: center;
+}

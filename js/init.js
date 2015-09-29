@@ -32,7 +32,11 @@
     $('#navbar').affix({
       offset: {
         top: function () {
-          return (this.top = $(window).height() - navbarHeight)
+          if (type === 'page') {
+            return (this.top = navbarHeight)
+          } else {
+            return (this.top = $(window).height() - navbarHeight)
+          }
         }
       }
     })
